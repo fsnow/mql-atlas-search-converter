@@ -1,0 +1,51 @@
+{
+  "name": "mql-atlas-search-converter",
+  "version": "1.0.0",
+  "description": "MongoDB MQL to Atlas Search Converter - Convert standard MongoDB queries to Atlas Search aggregation pipelines",
+  "main": "mql-to-atlas-search.js",
+  "scripts": {
+    "test": "node real-mongodb-test-runner-complete.js",
+    "test:pipeline": "node aggregation-pipeline-tests.js",
+    "test:all": "npm run test && npm run test:pipeline",
+    "setup:test-data": "node setup-test-data.js",
+    "setup:search-index": "node create-search-index-driver.js",
+    "check:search-index": "node check-search-index.js",
+    "demo": "node demo.js",
+    "demo:pipeline": "node demo-pipeline.js"
+  },
+  "keywords": [
+    "mongodb",
+    "atlas-search",
+    "mql",
+    "aggregation",
+    "search",
+    "mongosh"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "mql-to-atlas-search.js",
+    "aggregation-pipeline-tests.js",
+    "demo-pipeline.js",
+    "real-mongodb-test-runner-complete.js",
+    "setup-test-data.js",
+    "create-search-index-driver.js",
+    "check-search-index.js",
+    "demo.js",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/mql-atlas-search-converter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/mql-atlas-search-converter/issues"
+  },
+  "homepage": "https://github.com/yourusername/mql-atlas-search-converter#readme",
+  "dependencies": {
+    "mongodb": "^6.16.0"
+  }
+}
