@@ -2,6 +2,11 @@
 
 This document describes how the converter handles MQL `$regex` queries and converts them to Atlas Search.
 
+## Documentation References
+
+- [MongoDB $regex Operator (v8.0)](https://www.mongodb.com/docs/v8.0/reference/operator/query/regex/)
+- [Atlas Search regex Operator](https://www.mongodb.com/docs/atlas/atlas-search/regex/)
+
 ## Current Implementation
 
 The converter uses Atlas Search's native `regex` operator, which provides direct equivalence to MongoDB's `$regex`:
